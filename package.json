@@ -1,0 +1,25 @@
+{
+  "name": "socialApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luciano0322/socialApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luciano0322/socialApp/issues"
+  },
+  "homepage": "https://github.com/Luciano0322/socialApp#readme",
+  "dependencies": {
+    "apollo-server": "^2.21.0",
+    "graphql": "^15.5.0",
+    "mongoose": "^5.11.16"
+  }
+}
