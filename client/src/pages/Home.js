@@ -6,7 +6,7 @@ import { Grid } from 'semantic-ui-react';
 import PostCard from '../components/PostCard';
 
 function Home() {
-    const { loading, data: { getPosts: posts } } = useQuery(FETCH_POST_QUERY);
+    const { loading, data: { getPosts: posts } = {} } = useQuery(FETCH_POSTS_QUERY);
 
     return (
         <Grid columns={3}>
@@ -28,7 +28,7 @@ function Home() {
     )
 }
 
-const FETCH_POST_QUERY = gql`
+const FETCH_POSTS_QUERY = gql`
     {
         getPosts {
             id
