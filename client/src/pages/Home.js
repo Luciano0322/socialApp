@@ -10,7 +10,7 @@ function Home() {
 
     return (
         <Grid columns={3}>
-            <Grid.Row>
+            <Grid.Row style={{ justifyContent: 'center'}}>
                 <h1>Recent Posts</h1>
             </Grid.Row>
             <Grid.Row>
