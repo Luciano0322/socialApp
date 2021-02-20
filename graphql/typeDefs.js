@@ -1,4 +1,5 @@
 const { gql } = require('apollo-server');
+// gql 內為限定req的內容型態 !為必填
 
 module.exports = gql`
     type Post {

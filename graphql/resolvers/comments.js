@@ -3,6 +3,8 @@ const { UserInputError, AuthenticationError } = require('apollo-server');
 const checkAuth = require('../../Util/check-auth');
 const Post = require('../../models/Post');
 
+// comment 管理的地方 類似controller
+
 module.exports = {
     Mutation: {
         createComment: async (_, { postId, body }, context) => {

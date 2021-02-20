@@ -4,6 +4,8 @@ const { argsToArgsConfig } = require('graphql/type/definition');
 const Post = require('../../models/Post');
 const checkAuth = require('../../Util/check-auth');
 
+// Post管理的地方 類似controller
+
 module.exports = {
     Query: {
         async getPosts(){

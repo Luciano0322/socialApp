@@ -6,6 +6,8 @@ const { validateRegisterInput, validateLoginInput } = require('../../Util/valida
 const { SECRET_KEY } = require('../../config');
 const User = require('../../models/User');
 
+//登入驗證
+
 function generateToken(user){
     return jwt.sign(
         {
@@ -57,7 +59,7 @@ module.exports = {
             if(!valid){
                 throw new UserInputError('Errors', { errors });
             }
-            //TODO: Make sure user dosent already exist
+            // Make sure user dosen't already exist
             const user = await User.findOne({ username });
             if(user){
                 throw new UserInputError('Username is taken', {

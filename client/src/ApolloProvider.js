@@ -6,6 +6,7 @@ import { createHttpLink } from '@apollo/client/link/http';
 import { ApolloProvider } from '@apollo/client';
 
 const httpLink = createHttpLink({
+    //接應外層
     uri: 'http://localhost:5000'
 });
 
