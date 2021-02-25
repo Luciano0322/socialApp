@@ -126,18 +126,18 @@ function SinglePost(props) {
 }
 
 const SUBMIT_COMMENT_MUTATION = gql`
-    mutation($postId: ID!, $body: String!){
-        creatComment(postId: $postId, body: $body){
-            id
-            comments{
-                id
-                body
-                createdAt
-                username
-            }
-            commentCount
-        }
+  mutation($postId: String!, $body: String!) {
+    createComment(postId: $postId, body: $body) {
+      id
+      comments {
+        id
+        body
+        createdAt
+        username
+      }
+      commentCount
     }
+  }
 `;
 
 const FETCH_POST_QUERY = gql`
