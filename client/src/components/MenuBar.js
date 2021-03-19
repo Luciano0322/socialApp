@@ -31,23 +31,23 @@ function MenuBar() {
   ) : (
       <Menu pointing secondary size="massive" color="teal">
         <Menu.Item
-          name='home'
-          active={activeItem === 'home'}
+          name='主頁'
+          active={activeItem === '主頁'}
           onClick={handleItemClick}
           as={Link}
           to="/"
         />
         <Menu.Menu position='right'>
           <Menu.Item
-            name='login'
-            active={activeItem === 'login'}
+            name='登入'
+            active={activeItem === '登入'}
             onClick={handleItemClick}
             as={Link}
             to="/login"
           />
           <Menu.Item
-            name='register'
-            active={activeItem === 'register'}
+            name='註冊'
+            active={activeItem === '註冊'}
             onClick={handleItemClick}
             as={Link}
             to="/register"

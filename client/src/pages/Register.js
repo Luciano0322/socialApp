@@ -35,7 +35,7 @@ function Register(props) {
     return (
         <div className="form-container">
             <Form onSubmit={onSubmit} noValidate className={loading ? "loading" : ''}>
-                <h1>Register</h1>
+                <h1>註冊</h1>
                 <Form.Input
                     label="Username"
                     placeholder="Username.."
@@ -73,7 +73,7 @@ function Register(props) {
                     onChange={onChange}
                     />
                 <Button type="submit" primary>
-                    Register
+                    註冊
                 </Button>
             </Form>
             {Object.keys(errors).length > 0 && (

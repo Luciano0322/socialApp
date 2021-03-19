@@ -14,7 +14,7 @@ function Home() {
     return (
         <Grid columns={3}>
             <Grid.Row style={{ justifyContent: 'center'}}>
-                <h1>Recent Posts</h1>
+                <h1>最近的貼文</h1>
             </Grid.Row>
             <Grid.Row>
                 {user && (
